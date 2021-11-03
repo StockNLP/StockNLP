@@ -7,7 +7,7 @@ The long term users can be like financial analysts or quantitative analysts or d
 The researcher could take a look at the mathematical standpoint of our machine learning model. They constantly work on the model’s formulas to check the underlying model trend analysis. They can act as a checks and balances wing for our models. The skill level of the researcher is high in terms of understanding the algorithms, performance metrics. They might not have a similar skill level in terms of coding it and optimizing it, for which there are always technical teams to help.
 
 
-The users for our project can be any stock enthusiasts.. The retail investors can understand the market dynamics, flow and trend. Based on the analytics insights and performance metrics, they can have a basis to formulate investment and trading strategies.
+The users for our project can be any stock enthusiasts. The retail investors can understand the market dynamics, flow and trend. Based on the analytics insights and performance metrics, they can have a basis to formulate investment and trading strategies.
  
 #### Skill level of the use case: The skill level of a common stock investor is proficiency with the stock names and navigation with a simple smart device such as a mobile, tablet or laptop. 
 
