@@ -4,7 +4,7 @@
 # StockNLP
 
 A package to give investors actionable insights on stock market trends on popular stocks that were heavily influenced by the investors on social media.
-
+![Dashboard image](https://github.com/StockNLP/StockNLP/main/data/Screen Shot 2021-12-09 at 11.58.52 AM.png?raw=true)
 ## Project Contributors
 
 Yash Patel, Moses, Nelson, Aditya and Samartha
