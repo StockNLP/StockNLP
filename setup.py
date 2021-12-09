@@ -33,7 +33,7 @@ setup(name='StockNLP', version=1.0,
      long_description_content_type='text/markdown; \
                                     charset=UTF-8; variant=GFM',
      url='https://github.com/StockNLP/StockNLP',
-     license='Apache',
+     license='MIT',
      author='Yash Patel, Moses Prasad Varghese, Aditya Challa, Nelson, Samartha Ramkumar',
      python_requires="~=3.9",
      install_requires=[
@@ -60,5 +60,5 @@ setup(name='StockNLP', version=1.0,
        packages=setuptools.find_packages())
 
 classifiers = ("Programming Language :: Python :: 3",
-               "License :: OSI Approved :: Apache License",
+               "License :: OSI Approved :: MIT License",
                "Operating System :: OS Independent")
