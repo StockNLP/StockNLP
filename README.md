@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/{ORG-or-USERNAME}/{REPO-NAME}.png?branch=master)](https://travis-ci.org/StockNLP/WorkingRepo)
 [![Known Vulnerabilities](https://snyk.io/test/github/dwyl/hapi-auth-jwt2/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dwyl/hapi-auth-jwt2?targetFile=package.json)
 ![License](https://img.shields.io/badge/License-MIT-<COLOR>)
-![Versions](https://img.shields.io/badge/Platforms-linux-32-<COLOR>)
+![Versions](https://img.shields.io/badge/Platforms-linux-32-win-32-osx32-win64-<COLOR>)
 # StockNLP
 
 ## User Stories for our project:
