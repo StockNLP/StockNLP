@@ -17,7 +17,7 @@ Our primary objective involves developing an interactive dashboard for the retai
 
 ## Requirements
 
-The project requires authorization to Twitter and Reddit API. For reddit, our team used PushShift.io API. Please click on this [link][https://github.com/pushshift/api] for more information. In the case of Twitter, please apply for the developer account. The approval time might take 2-24 hours depending on the nature of the request. Please visit this [link](https://developer.twitter.com/en/portal/dashboard) for more information. The project also requires a latest python version (3.9.x). ).
+The project requires authorization to Twitter and Reddit API. For reddit, our team used PushShift.io API. Please click on this [link](https://github.com/pushshift/api) for more information. In the case of Twitter, please apply for the developer account. The approval time might take 2-24 hours depending on the nature of the request. Please visit this [link](https://developer.twitter.com/en/portal/dashboard) for more information. The project also requires a latest python version (3.9.x). ).
 
 ## Installation 
 
