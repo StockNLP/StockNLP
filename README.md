@@ -3,6 +3,54 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/dwyl/hapi-auth-jwt2/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dwyl/hapi-auth-jwt2?targetFile=package.json)
 # StockNLP
 
+A package to give investors actionable insights on stock market trends on popular stocks that were heavily influenced by the investors on social media.
+
+## Project Contributors
+
+Yash Patel, Moses, Nelson, Aditya and Samartha
+
+## Project Objective:
+
+In recent months, we have witnessed a significant shift in stock market prices through social media influence. Tweets and reddit submissions by popular personalities have influenced and increased the stock prices of certain stocks such as $AMC, $GME, $DOGE, etc over 100% over their all time price. This phenomenon drew our team’s attention to study the social media trend on the stock market. As social media is vast and to scope our project, we are studying the social media sentiment of two prominent platforms Twitter and Reddit. 
+
+Our primary objective involves developing an interactive dashboard for the retail and institutional investors to analyze the effect of social media sentiment along with stock metrics to draw meaningful and insightful actions / observations. 
+
+## Requirements
+
+The project requires authorization to Twitter and Reddit API. For reddit, our team used PushShift.io API. Please click on this [link][https://github.com/pushshift/api] for more information. In the case of Twitter, please apply for the developer account. The approval time might take 2-24 hours depending on the nature of the request. Please visit this [link](https://developer.twitter.com/en/portal/dashboard) for more information. The project also requires a latest python version (3.9.x). ).
+
+## Installation 
+
+The package Stock NLP can be installed using the following instructions.
+
+ 1. Please open the terminal of your choice.
+ 2. Clone the repository using: `git clone  https://github.com/StockNLP` 
+ 3. Change the directory to StockNLP root directory, by running the command: `cd StockNLP`
+ 4. Now, set up a new virtual environment using the command: `conda create -n stockNLP`
+ 5. Activate the stockNLP virtual environment by running the command: `conda activate stockNLP`
+ 6. Install the package requirements by using the command: `pip/conda install -r requirements.txt`
+
+## Tool
+StockNLP contains social media submissions sentiment scores through specific modules that contain three classes of functions and a main.
+
+ 1. We have a main function that calls the APIs of Twitter and Reddit to extract the social media submissions. We subsequently point them to respective TwitterData and RedditData classes.
+ 2. The TwitterData and RedditData class files have helper functions that help to preprocess the data and get them into a working dataframe.
+ 3. The Vader class apparently adds the sentiment scores and metrics to the workable data frame that is extracted in the previous step.
+ 4. We then pass this extracted dataframe from the deep learning model that factors the sentiment score into a simulated trading model.
+
+
+## Mission
+
+The mission for the prject are as follows:
+
+  1. Obtain data from Twitter and Reddit submissions primarily to obtain the sentiment score on popular stocks.
+  2. Preprocess the available data so that it can readily be used by the deep learning models.
+  3. Perform sentiment analysis on the data and obtain weighted polarity scores for each input.
+  4. Train a machine learning algorithm to capture the “bullish” or “bearish” market sentiment based on the developed model
+  5. Report back to the user about the existing hot stock in the market
+  6. Prepare a User Interface that is dynamic to show the trend of a particular stock using social media sentiment as a metric. 
+
+
 ## User Stories for our project:
 
 The long term users can be like financial analysts or quantitative analysts or developers. They could leverage the current NLP model to find and make insights out of it. The main investors are retail investors. 
@@ -12,37 +60,19 @@ The researcher could take a look at the mathematical standpoint of our machine l
 
 The users for our project can be any stock enthusiasts. The retail investors can understand the market dynamics, flow and trend. Based on the analytics insights and performance metrics, they can have a basis to formulate investment and trading strategies.
  
-#### Skill level of the use case: The skill level of a common stock investor is proficiency with the stock names and navigation with a simple smart device such as a mobile, tablet or laptop. 
+#### Skill level of the use case: The skill level required by a common stock investor is proficiency with the stock names and navigation with a simple smart device such as a mobile, tablet or laptop. The user further requires an ability to read a dynamic graphs in the dashboard.
 
-## Describing a use case:
+## Description a use case:
 
-### Use Case 1:
+**Information User Provides:** They provide the stock information that they want to check. (Which is typically like a ticker system). 
 
-  Information User Provides: They provide the stock information that they want to check. (Which is typically like a ticker system). 
+**Information that system provides:** We as a team would use the pre-trained machine learning model to cross reference the current social media trend and compare to the model and give them an insight of the investment strategy for the next few hours. We will provide them signal strength of the stocks with visualizations.
 
-### Use Case 2: 
+## Contribution
 
-  Information that system provides: We as a team would use the pre-trained machine learning model to cross reference the current social media trend and compare to the model and give them an insight of the investment strategy for the next few hours. We will provide them signal strength of the stocks with visualizations.
+If you are interested in making contributions to the repository, please add your contributions and generate a pull request.
 
+## Acknowledgement 
 
-## Specification of the Components:
+This project is created as a part of CSE 583- Software Development for Data Scientists at University of Washington - Seattle. We thank Prof. David Beck and Anant Mittal for extending their support and encouragement for this project.
 
-### Component 1: 
-
-
-  1. Name: Interactive Stock - Dashboard
-  2. What it does: Displays the stock metrics, visualizations and trading strategies.
-  3. Inputs (with type information): Stock Ticker Symbol (eg. $AAPL)
-  4. Outputs (with type information): Sentiment Score, Stock Chart, Sentiment TimeSeries 
-  5. How to use other components: The user inputs the ticker symbol and presses the process button to then get the visualizations and sentiment analytics from the data we fetch in real-time using APIs and then using NLP and machine learning to derive the sentiment metric.
-
-### Component 2:
-
-  1. Name: Data fetch functionality. (Our ML Model) 
-
-
-### Component Specifications:
-
-  1. Current Components of the Use Cases: 
-  2. Components already available:
-  3. Sub-components that are required to be implement those components that aren’t already available: Ingestion Engine, Our ML Model, Visualization Database
