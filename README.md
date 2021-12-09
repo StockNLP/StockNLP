@@ -4,7 +4,7 @@
 # StockNLP
 
 A package to give investors actionable insights on stock market trends on popular stocks that were heavily influenced by the investors on social media.
-![Dashboard Image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fcucucovers.com%2Fproducts%2Fnot-stonks&psig=AOvVaw0PCmosJUwg6FhAGf3QSu-F&ust=1639166770990000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMDozZzC1_QCFQAAAAAdAAAAABAQ)
+
 ## Project Contributors
 
 Yash Patel, Moses, Nelson, Aditya and Samartha
