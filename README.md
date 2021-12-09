@@ -31,7 +31,12 @@ The project requires authorization to Twitter and Reddit API. For reddit, our te
  │   ├── Reddit Data
  │   └── Twitter Data
  │   └── Stock Data
- ├── Tests
+ ├── tests
+ │   └── test_redditscraping
+ │   └── test_rl
+ │   └── test_twitscrap_vader
+ │   └── test_vaderreddit
+ │   └── test_yfinancescraping
  ├── LICENSE
  ├── README.md
  ├── app.py
