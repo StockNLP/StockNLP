@@ -1,3 +1,4 @@
+[![HitCount](http://hits.dwyl.com/StockNLP/WorkingRepo.svg?style=flat-square)](http://hits.dwyl.com/StockNLP/WorkingRepo)
 # StockNLP
 
 ## User Stories for our project:
