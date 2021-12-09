@@ -23,11 +23,14 @@ The project requires authorization to Twitter and Reddit API. For reddit, our te
 ```
  .
  ├── code
- │   ├── twitter_data
- │   └── 
+ │   ├── twitter_class
+ │   └── reddit_scraper_module
+ │   └── yfinance_automated_script
+ │   └── yfinance_download
  ├── data
  │   ├── Reddit Data
  │   └── Twitter Data
+ │   └── Stock Data
  ├── Tests
  ├── LICENSE
  ├── README.md
