@@ -88,7 +88,7 @@ class TwitterData:
         return date,like, rtweet
 
     @staticmethod
-    def PreProcessing( df_t):
+    def preprocessing( df_t):
         '''
         This function is to pre_process the data that we extracted from the earlier function
         It takes in the dataframe that we extracted earlier and subsequently preprocesses them
@@ -104,7 +104,7 @@ class TwitterData:
         df_t.clean_tweet = df_t.clean_tweet.apply(lambda x: re.sub(r'{link}', '', x))
         df_t.clean_tweet = df_t.clean_tweet.apply(lambda x: re.sub(r"\[video\]", '', x))
     @staticmethod
-    def VaderScoreGenerator(df_t):
+    def vaderScoreGenerator(df_t):
         '''
         This function takes in the dataframe that we appeneded earlier and computes the sentiment
         scores and extracts the polarity scores using the Vader Sentiment Analyzer
@@ -122,7 +122,7 @@ class TwitterData:
         df_t['Total_Weighted_Score'] = df_t.apply(lambda row: (row['Compound']* row['Weights']),
         axis=1)
     @staticmethod
-    def AppendToMaster(df_t):
+    def appendToMaster(df_t):
         '''
         This function apparently takes the data frame that we preprocessed earlier and appends it 
         to the master csv file that we have been collecting.
@@ -131,7 +131,7 @@ class TwitterData:
         mode='a', header=False)
 
     @staticmethod
-    def GenerateDataforEachStock():
+    def generateDataforEachStock():
         '''
         This function essentially reads the master csv file reads it and subsets the ticker
         to get the average sentiment score overall.
