@@ -1,7 +1,7 @@
-from datetime import datetime
 import streamlit as st
 import pandas_datareader.data as web
 import pandas as pd
+from datetime import datetime
 import numpy as np
 from reddit_scraper_module import RedditData as rd
 from Vader_Working_File import vaderReddit as vd
@@ -10,7 +10,8 @@ import nltk
 nltk.download('vader_lexicon')
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import plotly.express as px
-sia = SentimentIntensityAnalyzer()  
+sia = SentimentIntensityAnalyzer()
+
 
 st.title("Welcome to StockNLP's Dashboard 🚀")
 st.markdown("Here, we show you the ongoing sentiment of any stock of your choosing. We then run a simulated trade and **show you the money!** 💰💰💰")
@@ -18,7 +19,8 @@ USER_INPUT = st.text_input("Please enter a stock ticker symbol like so: '$AMC'")
 
 STOCK_INPUT = USER_INPUT[1:].lower()
 
-DF = web.DataReader(STOCK_INPUT, 'yahoo', datetime(2020, 1, 1), datetime.today())
+DF = web.DataReader(STOCK_INPUT, 'yahoo', datetime(2016, 1, 1), datetime.today()) 
+
 
 INCREASING_COLOR = '#12AF4A'
 DECREASING_COLOR = '#D83916'
@@ -142,34 +144,38 @@ def get_reddit_data():
         special character.
     '''
     df_reddit = pd.DataFrame(columns = ['Date','Comment', 'Tags'])
-    subreddits = ['wallstreetbets', 'robinhood', 'stocks', 'investing']
-    channel = str(input('Please input which subreddit you want to search: '+ str(subreddits) ))
-    start_time = int(datetime(2021, 3, 1).timestamp())
+    #subreddits = ['wallstreetbets', 'robinhood', 'stocks', 'investing']
+    #channel = str(input('Please input which subreddit you want to search: '+ str(subreddits) ))
+    start_time = int(datetime(2021, 10, 1).timestamp())
     api = PushshiftAPI()
-    df_master = pd.read_csv('reddit_working.csv', index_col = 0)
-    submissions = list(api.search_submissions(after="400d",
-                       subreddit=channel,
+    df_master = pd.read_csv('/Users/yash/Downloads/reddit_working.csv', index_col = 0)
+    submissions = list(api.search_submissions(after=start_time,
+                       subreddit='wallstreetbets',
                        filter=['author', 'title', 'subreddit', 'subscribers',
                                'comment_score_hide_mins', 'created_utc'],
-                       limit=100)) 
+                       limit=100))
     tag, comment, date = rd.cashtags(submissions)
     rd.add_to_df(tag, comment, date, df_reddit)
     vd.add_vader_scores(df_reddit)
     vd.add_vader_weighted_sentiments(df_reddit)
-    red_score = vd.get_subset(USER_INPUT,df_reddit)
-    red_final = vd.get_score(red_score)
     df_master = df_master.append(df_reddit)
-    df_master.to_csv("reddit_working.csv")
-    return pd.DataFrame(red_final)
+    df_master.to_csv("/Users/yash/Downloads/reddit_working.csv")
+    master_df = pd.read_csv("/Users/yash/Downloads/reddit_working.csv", index_col = 0)
+    print(df_reddit)
+    red_score = vd.get_subset(USER_INPUT, master_df)
+    print(red_score)
+    red_final = vd.get_score(red_score)
+    print(red_final)
+    return pd.DataFrame(red_final).reset_index()
 
 score_reddit = get_reddit_data()
 
+
 def get_senti_trend(df):
-    fig = px.line(df, x="year", y="lifeExp", title='Life expectancy in Canada')
+    fig = px.line(df, x=df['Date'], y=df['Sentiment_Score'], title='Sentiment Trend')
     return fig
 fig = get_senti_trend(score_reddit)
-st.plotly_chart(fig)
-    
+#print(fig)
+st.plotly_chart(fig)   
 
-    
-    
+   

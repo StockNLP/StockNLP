@@ -59,9 +59,9 @@ The package Stock NLP can be installed using the following instructions.
  1. Please open the terminal of your choice.
  2. Clone the repository using: `git clone  https://github.com/StockNLP` 
  3. Change the directory to StockNLP root directory, by running the command: `cd StockNLP`
- 4. Now, set up a new virtual environment using the command: `conda create -n stockNLP`
+ 4. Now, set up a new virtual environment using the command: `conda env create -f environment.yml`. Note that this will also install all your dependencies that are required for this project.
  5. Activate the stockNLP virtual environment by running the command: `conda activate stockNLP`
- 6. Install the package requirements by using the command: `pip/conda install -r requirements.txt`
+
 
 ## Tool
 StockNLP contains social media submissions sentiment scores through specific modules that contain three classes of functions and a main.
