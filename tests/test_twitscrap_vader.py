@@ -12,7 +12,7 @@ from twitter_class import appendToMaster
 from twitter_class import get_score
 from twitter_class import get_subset
 
-class Testtwitter_scrapping_vader(unittest.TestCase):
+class Test_twitter_scrapping_vader(unittest.TestCase):
        def test_smoke(self):
            """Simple smoke test to make sure function runs"""
            add_to_df()
