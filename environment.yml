@@ -3,7 +3,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.9.7
+  - python==3.9.7
   - pip:
     - alpha-vantage==2.3.1
     - altair==4.1.0
