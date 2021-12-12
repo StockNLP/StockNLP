@@ -4,7 +4,7 @@ import pandas as pd
 from datetime import datetime
 import numpy as np
 from reddit_scraper_module import RedditData as rd
-from Vader_Working_File import vaderReddit as vd
+from vader_working_file import VaderReddit as vd
 from psaw import PushshiftAPI
 import nltk
 nltk.download('vader_lexicon')
