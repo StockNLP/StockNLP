@@ -25,23 +25,24 @@ The project requires authorization to Twitter and Reddit API. For reddit, our te
  ├── code
  │   ├── twitter_class
  │   └── reddit_scraper_module
- │   └── Vader_Working_File
+ │   └── vader_working_file
  │   └── master_dashboard
  ├── data
- │   ├── Reddit Data
- │   └── Twitter Data
+ │   ├── reddit_working
+ │   └── Twitter_Data_Master
+     └── subs
+     └── Reddit_Test
  ├── examples
- │   └── RedditScraping copy
+ │   └── RedditScraping_copy
  │   └── RedditScraping
  │   └── Twitter_automated_script
- │   └── Vader Sentiment scores
+ │   └── Vader_Sentiment_scores
  │   └── Vader_Working_File
  ├── tests
- │   └── test_redditscraping
- │   └── test_rl
- │   └── test_twitscrap_vader
- │   └── test_vaderreddit
- │   └── test_yfinancescraping
+     └── test_redditscraping
+     └── test_master_dash
+     └── test_twitscrap_vader
+     └── test_vaderreddit 
  ├── LICENSE
  ├── README.md
  ├── environment.yml
