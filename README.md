@@ -25,8 +25,8 @@ The project requires authorization to Twitter and Reddit API. For reddit, our te
  ├── code
  │   ├── twitter_class
  │   └── reddit_scraper_module
- │   └── yfinance_automated_script
- │   └── yfinance_download
+ │   └── Vader_Working_File
+ │   └── master_dashboard
  ├── data
  │   ├── Reddit Data
  │   └── Twitter Data
