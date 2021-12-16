@@ -29,7 +29,7 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import plotly.express as px
 sia = SentimentIntensityAnalyzer()
 from reddit_scraper_module import RedditData as rd
-from Vader_Working_File import vaderReddit as vd
+from vader_working_file import VaderReddit as vd
 import math
 from keras.models import Sequential
 from keras.models import load_model
