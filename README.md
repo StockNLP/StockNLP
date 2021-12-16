@@ -1,7 +1,6 @@
 [![HitCount](http://hits.dwyl.com/StockNLP/WorkingRepo.svg?style=flat-square)](http://hits.dwyl.com/StockNLP/WorkingRepo)
 [![Build Status](https://travis-ci.org/{ORG-or-USERNAME}/{REPO-NAME}.png?branch=master)](https://travis-ci.org/StockNLP/WorkingRepo)
 [![Known Vulnerabilities](https://snyk.io/test/github/dwyl/hapi-auth-jwt2/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dwyl/hapi-auth-jwt2?targetFile=package.json)
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/StockNLP/StockNLP/master_dashboard.py/)
 # StockNLP
 
 A package to give investors actionable insights on stock market trends on popular stocks that were heavily influenced by the investors on social media.
