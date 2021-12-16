@@ -30,15 +30,12 @@ The project requires authorization to Twitter and Reddit API. For reddit, our te
  ├── data
  │   ├── Reddit Data
  │   └── Twitter Data
- │   └── Stock Data
  ├── examples
  │   └── RedditScraping copy
  │   └── RedditScraping
  │   └── Twitter_automated_script
  │   └── Vader Sentiment scores
  │   └── Vader_Working_File
- │   └── yfinance_automated_script
- │   └── yfinance_download
  ├── tests
  │   └── test_redditscraping
  │   └── test_rl
