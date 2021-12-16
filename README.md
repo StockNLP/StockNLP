@@ -47,7 +47,6 @@ The project requires authorization to Twitter and Reddit API. For reddit, our te
  │   └── test_yfinancescraping
  ├── LICENSE
  ├── README.md
- ├── app.py
  ├── environment.yml
  ├── requirements.txt
  └── setup.py
