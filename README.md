@@ -94,7 +94,7 @@ The users for our project can be any stock enthusiasts. The retail investors can
  
 #### Skill level of the use case: The skill level required by a common stock investor is proficiency with the stock names and navigation with a simple smart device such as a mobile, tablet or laptop. The user further requires an ability to read a dynamic graphs in the dashboard.
 
-## Description a use case:
+## Description of the Use Case:
 
 **Information User Provides:** They provide the stock information that they want to check. (Which is typically like a ticker system). 
 
