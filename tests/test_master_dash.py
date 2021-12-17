@@ -3,9 +3,9 @@
 import numpy as np
 import pandas as pd
 import unittest
-from master_dashboard import movingaverage
-from master_dashboard import get_senti_trend
-from master_dashboard import Agent as ag
+from .master_dashboard import movingaverage
+from .master_dashboard import get_senti_trend
+from .master_dashboard import Agent as ag
 
 class Test_master_dash(unittest.TestCase):
 
