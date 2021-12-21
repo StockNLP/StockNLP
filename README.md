@@ -27,17 +27,17 @@ The project requires authorization to Twitter and Reddit API. For reddit, our te
  │   └── reddit_scraper_module
  │   └── vader_working_file
  │   └── master_dashboard
+ │   └── data
  ├── data
  │   ├── reddit_working
  │   └── Twitter_Data_Master
      └── subs
      └── Reddit_Test
  ├── examples
- │   └── RedditScraping_copy
  │   └── RedditScraping
- │   └── Twitter_automated_script
- │   └── Vader_Sentiment_scores
- │   └── Vader_Working_File
+ │   └── Twitter automated script
+ │   └── Vader Sentiment scores
+ │   └── Vader Working File
  ├── tests
      └── test_redditscraping
      └── test_master_dash
