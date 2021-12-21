@@ -41,7 +41,6 @@ The project requires authorization to Twitter and Reddit API. For reddit, our te
  ├── tests
      └── test_redditscraping
      └── test_master_dash
-     └── test_twitscrap_vader
      └── test_vaderreddit 
  ├── LICENSE
  ├── README.md
