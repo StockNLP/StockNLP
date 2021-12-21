@@ -35,9 +35,9 @@ The project requires authorization to Twitter and Reddit API. For reddit, our te
      └── Reddit_Test
  ├── examples
  │   └── RedditScraping
- │   └── Twitter automated script
+ │   └── Twitter_automated_script
  │   └── Vader Sentiment scores
- │   └── Vader Working File
+ │   └── Vader_Working_File
  ├── tests
      └── test_redditscraping
      └── test_master_dash
