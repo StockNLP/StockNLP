@@ -31,17 +31,17 @@ The project requires authorization to Twitter and Reddit API. For reddit, our te
  ├── data
  │   ├── reddit_working
  │   └── Twitter_Data_Master
-     └── subs
-     └── Reddit_Test
+ │   └── subs
+ │   └── Reddit_Test
  ├── examples
  │   └── RedditScraping
  │   └── Twitter_automated_script
  │   └── Vader_Sentiment_scores
  │   └── Vader_Working_File
  ├── tests
-     └── test_redditscraping
-     └── test_master_dash
-     └── test_vaderreddit 
+ │   └── test_redditscraping
+ │   └── test_master_dash
+ │   └── test_vaderreddit 
  ├── LICENSE
  ├── README.md
  ├── environment.yml
